@@ -686,6 +686,11 @@ def all_possible(poss_board):
 
 
 
-new_board()
-for i in range(9):
-  print(print_board [i])
+from os import system
+while True:
+  new_board()
+  for i in range(9):
+    print(print_board [i])
+  input("")
+  system('cls')
+  
