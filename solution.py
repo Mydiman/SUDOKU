@@ -4,7 +4,7 @@
 
 
 
-def generate():
+def solution():
     from random import sample
     
     
