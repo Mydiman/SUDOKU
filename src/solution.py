@@ -31,22 +31,22 @@ def solution():
         [8, 0, 1, 2, 3, 4, 5, 6, 7]]
     """
     def position(row, column):
-        rBox  = row % 3
+        rBox = row % 3
         return (3 * rBox + row // 3 + column) % 9
     
     
     
-    rows  = []
+    rows = []
     for i in shuffle([0, 1, 2]):
         for j in shuffle([0, 1, 2]):
             rows.append(i * 3 + j)
     
-    cols  = []
+    cols = []
     for i in shuffle([0, 1, 2]):
         for j in shuffle([0, 1, 2]):
             cols.append(i * 3 + j)
     
-    nums  = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    nums = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9])
     
     board = []
     for r in rows:
